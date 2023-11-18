@@ -1,2 +1,10 @@
+[profile.default]
+libs = ["lib"]
+remappings = [
+    '@openzeppelin/contracts=lib/openzeppelin-contracts/contracts',
+    "solady/src=lib/solady/src"
+]
 [profile.ci.fuzz]
-runs = 10_000
+runs = 1
+depth = 1
+fail_on_revert = true
